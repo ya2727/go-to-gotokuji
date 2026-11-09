@@ -1,0 +1,39 @@
+
+backend:
+  name: github
+  repo: ya2727/go-to-gotokuji
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Eat & Drink"
+          - "See & Do"
+          - "Shop"
+          - "Walk"
+      - label: "Cover Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
