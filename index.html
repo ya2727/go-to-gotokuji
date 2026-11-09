@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go To GoTokuji. | Tokyo Neighborhood Magazine</title>
+<meta name="description" content="An independent English-language guide to Gotokuji Temple, local cafés, shops and the streets of Setagaya, Tokyo.">
+<style>
+:root {
+  --cream:#f6f0e3;
+  --green:#244c3e;
+  --red:#b64739;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--green);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+}
+header {
+  border-bottom:2px solid var(--green);
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.logo {
+  font-family:Georgia,serif;
+  font-weight:bold;
+  font-size:24px;
+}
+nav a {
+  color:var(--green);
+  text-decoration:none;
+  margin-left:15px;
+  font-size:13px;
+  font-weight:bold;
+}
+.hero {
+  padding:55px 6% 65px;
+  text-align:center;
+}
+.kicker {
+  color:var(--red);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+h1 {
+  font-family:Georgia,serif;
+  font-size:clamp(48px,9vw,110px);
+  line-height:1;
+  letter-spacing:-3px;
+  margin:22px 0;
+}
+.subtitle {
+  color:var(--red);
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.cover {
+  background:#dce4d7;
+  max-width:1050px;
+  margin:35px auto;
+  padding:55px 20px;
+  border-radius:5px;
+  text-align:center;
+}
+.cat {font-size:110px}
+.cover h2 {
+  font-family:Georgia,serif;
+  font-size:clamp(28px,5vw,50px);
+  line-height:1.2;
+}
+.intro {
+  max-width:660px;
+  margin:30px auto;
+  font-size:19px;
+}
+section {
+  max-width:1100px;
+  margin:auto;
+  padding:55px 6%;
+}
+.section-title {
+  font-family:Georgia,serif;
+  font-size:40px;
+  border-bottom:2px solid var(--green);
+  padding-bottom:15px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.card {
+  background:#fffdf8;
+  padding:25px;
+  border:1px solid #ddd6c9;
+}
+.card .emoji {font-size:55px}
+.card h3 {
+  font-family:Georgia,serif;
+  font-size:26px;
+  line-height:1.2;
+}
+.tag {
+  color:var(--red);
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.note {
+  background:#e4e9de;
+  padding:30px;
+  margin-top:30px;
+}
+.ad {
+  border:1px dashed #aaa;
+  text-align:center;
+  padding:22px;
+  color:#777;
+  font-size:12px;
+  margin:25px 0;
+}
+footer {
+  background:var(--green);
+  color:white;
+  padding:45px 6%;
+  text-align:center;
+}
+footer a {color:white}
+@media(max-width:700px) {
+  header {display:block;text-align:center}
+  nav {margin-top:10px}
+  nav a {margin:0 8px}
+  .grid {grid-template-columns:1fr}
+  h1 {letter-spacing:-1px}
+  .hero {padding-top:35px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Go To GoTokuji.</div>
+  <nav>
+    <a href="#stories">STORIES</a>
+    <a href="#guide">GUIDE</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div class="kicker">
+    AN INDEPENDENT TOKYO NEIGHBORHOOD MAGAZINE
+  </div>
+  <h1>Go To<br>GoTokuji.</h1>
+  <p class="subtitle">
+    GOOD COFFEE. LITTLE STREETS. LUCKY CATS.
+  </p>
+
+  <div class="cover">
+    <div class="cat">🐈</div>
+    <h2>NOT JUST A TEMPLE.<br>A WHOLE NEIGHBORHOOD.</h2>
+    <p>SETAGAYA, TOKYO — ISSUE 001</p>
+  </div>
+
+  <p class="intro">
+    Tokyo has more to offer than the usual tourist spots.
+    Come for Gotokuji's famous lucky cats, and discover
+    the cafés, small shops, local trains and quiet streets
+    that make this neighborhood special.
+  </p>
+</div>
+
+<section id="stories">
+  <div class="kicker">THE NEIGHBORHOOD EDIT</div>
+  <h2 class="section-title">Good Things Around Here.</h2>
+
+  <div class="grid">
+    <article class="card">
+      <div class="emoji">☕</div>
+      <p class="tag">EAT & DRINK</p>
+      <h3>Coffee & Little Cafés</h3>
+      <p>
+        A slower cup of coffee, away from Tokyo's
+        busiest streets. Discover the neighborhood
+        one café at a time.
+      </p>
+      <p>COMING SOON</p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🐈</div>
+      <p class="tag">SEE & DO</p>
+      <h3>The Lucky Cat Temple</h3>
+      <p>
+        Gotokuji is known for its white lucky cats.
+        Explore the temple respectfully and discover
+        the stories behind this special place.
+      </p>
+      <p>COMING SOON</p>
+    </article>
+
+    <article class="card">
+      <div class="emoji">🚃</div>
+      <p class="tag">WALK & EXPLORE</p>
+      <h3>The Setagaya Line</h3>
+      <p>
+        A charming local tram, residential streets
+        and small discoveries along the way.
+        Sometimes the journey is the destination.
+      </p>
+      <p>COMING SOON</p>
+    </article>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="kicker">FIRST TIME HERE?</div>
+  <h2 class="section-title">The Essential Guide.</h2>
+  <p>
+    Gotokuji Temple is located in Setagaya, Tokyo.
+    Gotokuji Station on the Odakyu Line and
+    Miyanosaka Station on the Tokyu Setagaya Line
+    are useful starting points.
+  </p>
+  <div class="note">
+    <strong>Before you visit</strong>
+    <p>
+      Gotokuji is an active Buddhist temple.
+      Please respect posted rules, local residents
+      and other visitors. Check the official temple
+      website for current opening hours, access
+      restrictions and visitor guidance.
+    </p>
+    <a href="https://gotokuji.jp/"
+       target="_blank" rel="noopener">
+      Official Gotokuji Temple Website
+    </a>
+  </div>
+  <div class="ad">
+    FUTURE ADVERTISING SPACE
+  </div>
+</section>
+
+<section id="about">
+  <div class="kicker">OUR STORY</div>
+  <h2 class="section-title">A Little More Local.</h2>
+  <p>
+    Go To GoTokuji. is an independent English-language
+    neighborhood magazine created from a local
+    Setagaya perspective.
+  </p>
+  <p>
+    We celebrate the little things that make Tokyo
+    memorable: independent shops, good coffee,
+    everyday streets and local culture.
+  </p>
+  <p>
+    This publication is not affiliated with
+    Gotokuji Temple.
+  </p>
+</section>
+</main>
+
+<footer>
+  <h2>Go To GoTokuji.</h2>
+  <p>A neighborhood magazine for curious travelers.</p>
+  <small>© 2026 Go To GoTokuji.</small>
+</footer>
+
+</body>
+</html>
